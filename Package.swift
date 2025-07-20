@@ -22,10 +22,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "NutritionKit",
-            dependencies: ["Toolbox", "Panorama"]),
+            dependencies: []),
         .testTarget(
             name: "NutritionKitTests",
-            dependencies: ["NutritionKit", "Toolbox", "Panorama"],
+            dependencies: ["NutritionKit"],
             resources: [
                 .process("TestAssets.xcassets")
             ]
